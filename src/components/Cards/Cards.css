@@ -1,0 +1,197 @@
+.cards {
+  /* padding: 4rem; */
+  background-color: #fff;
+}
+
+/* h1 {
+  text-align: center;
+} */
+
+.cards__container {
+  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  margin-left: 5rem;
+  min-height: 70vh; /* if empty cards fix bottom footer
+}
+
+.cards__wrapper {
+  display: relative;
+  margin: 50px 0 45px 0;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust the minmax value as needed */
+  grid-gap: 1rem;
+}
+
+.cards__items {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  list-style: none;
+  /*  margin: 0 -15px;
+  gap: 35px;*/
+}
+
+.cards__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: flex-end;
+  width: 400px; /* Adjust the width as needed */
+  height: 500px; /* Adjust the height as needed */
+  margin: 20px; /* Adjust the margin between cards as needed */
+  border-radius: 10px;
+  box-shadow: none; /* Add shadow for a card effect */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+.cards__item__link {
+  display: flex;
+  flex-flow: column;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 220px;
+  height: 300px;
+  padding: 1rem;
+
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  border-radius: 10px;
+  /* border: 2px solid black; */
+
+  overflow: hidden;
+  text-decoration: none;
+  min-height: 85%;
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.cards__item__link:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__pic-wrap {
+  display: grid;
+  place-items: center; /* Center the image both horizontally and vertically */
+  position: relative;
+
+  width: 320px;
+  /* padding-top: 10px; */
+
+  padding-bottom: 10px;
+  overflow: hidden;
+}
+
+/* .fade-img {
+  animation-name: fade-img;
+  animation-duration: 2s;
+} */
+
+.cards__item__pic-wrap::after {
+  /* border: 3px solid black; */
+  border-radius: 10px;
+  place-items: center;
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  flex-direction: column;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  background-color: transparent;
+  overflow: hidden;
+  padding-top: 1px;
+  max-width: 14rem;
+  height: 10rem;
+}
+
+.cards__item__img {
+  height: 100%;
+  width: 60%;
+  object-fit: contain;
+  transition: 0.5s;
+  border-radius: 10px;
+  background: transparent;
+  float: left;
+  /* margin: 5px 2px 5px 5px; */
+  font-size: 15px;
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  object-fit: contain;
+  transition: 0.5s;
+  border-radius: 10px;
+  padding-top: 10px;
+  background: transparent;
+}
+
+.cards__item__img:hover {
+  transform: scale(1.1);
+}
+
+.cards__item__info {
+  /* padding: 20px 10px 10px; */
+  font-size: 12px;
+  text-align: center;
+}
+
+.cards__item__text {
+  color: #252e48;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 24px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: rgb(17, 16, 16);
+  text-align: center;
+  margin-left: 5px;
+  padding-bottom: 10px;
+}
+
+.cards__item__location {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding-top: 0.5rem;
+}
+
+.cards__item__marker {
+  display: none;
+}
+
+.cards__item__type {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+}
+
+.cards__item__location {
+  font-size: 16px;
+  color: #888;
+}
+
+@media only screen and (min-width: 1200px) {
+  .content__blog__container {
+    width: 84%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
